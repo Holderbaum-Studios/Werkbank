@@ -1,0 +1,87 @@
+<!-- werkbank-template: kontext v1.0 -->
+# {{MARKE}}
+
+Lies diese Datei zuerst. Sie ist die Orientierung fuer jeden Agenten, der in diesem Verzeichnis arbeitet.
+
+---
+
+## Wer ist {{NAME}}?
+
+{{BESCHREIBUNG}}
+
+**Mission:** {{MISSION}}
+
+---
+
+## Always-Regeln
+
+**Tonalitaet:** {{TONALITAET}}
+
+**Anrede:** {{ANREDE}}
+
+**Dateinamen:** Deutsch, Kleinbuchstaben, Bindestriche. Keine Umlaute. Datum-Prefix fuer zeitgebundene Inhalte: `2026-03-04-titel.md`.
+
+---
+
+## Regelsystem
+
+Regeln leben als einzelne Markdown-Dateien in `Werkbank/Regeln/`. Bei Session-Start: Lies `Werkbank/Regeln/regelsystem.md` (Bootstrap), pruefe dann diesen Index und lade was relevant ist.
+
+Wenn du korrigiert wirst und es heisst "mach eine Regel draus": Neue Regeldatei schreiben und diesen Index aktualisieren.
+
+| Regel | Trigger (vollstaendig) | Datei |
+|-------|------------------------|-------|
+| Regelsystem (Bootstrap) | "Regel erstellen", "Regel aendern", "mach eine Regel draus", "Lernen festhalten", "das soll nie wieder passieren", "Rolle anlegen", "neue Rolle", "Rolle erstellen", oder Kontext: nach einer Korrektur wird darum gebeten ein Verhalten dauerhaft festzuhalten, oder Kontext: eine neue Rolle wird in Werkbank/Rollen/ angelegt oder eine bestehende veraendert | `Werkbank/Regeln/regelsystem.md` |
+| Projektstruktur | "Projekt anlegen", "Arbeitspaket anlegen", "Arbeitspaket spezifizieren", "In einem Projekt arbeiten", "Projektstruktur", oder Kontext: wenn ein Agent in einem Projektverzeichnis arbeitet oder ein neues Projekt aufsetzen soll | `Werkbank/Regeln/projektstruktur.md` |
+
+---
+
+## Rollen
+
+Wenn eine Rolle aktiviert wird — durch Trigger-Woerter oder direkte Anweisung — lies ZUERST die zugehoerige SYSTEM.md und arbeite danach.
+
+| Rolle | Trigger (vollstaendig) | Laden |
+|-------|------------------------|-------|
+{{ROLLEN_TABELLE}}
+
+---
+
+## Projekte
+
+| Projekt | Beschreibung | Einstieg |
+|---------|-------------|----------|
+
+## Engagements
+
+Zeitgebundene Klientenarbeit mit Anfang und Ende. Struktur: `Engagements/Aktiv/` und `Engagements/Archiv/`.
+
+## Wissen
+
+Kanonisches Querschnittswissen: Thesen, Konzepte, Recherche, Stimmen. Lebt in `Wissen/`.
+
+---
+
+## Verzeichnisstruktur
+
+```
+{{MARKE}}/
+├── KONTEXT.md              ← Du bist hier
+├── Werkbank/               Regeln, Rollen, Vorlagen, Prozesse
+├── Projekte/               Alles woran gearbeitet wird
+├── Engagements/            Zeitgebundene Klientenarbeit
+└── Wissen/                 Thesen, Konzepte, Recherche, Stimmen
+```
+
+## Fuer Agenten
+
+1. **Immer zuerst diese KONTEXT.md lesen**
+2. **Always-Regeln beachten** — sie gelten immer
+3. **Relevante Regeln laden** — anhand des Index oben
+4. **Rolle laden** wenn eine aktiviert wird
+5. **MANIFEST.md lesen** wenn in einem Projekt oder Engagement gearbeitet wird
+
+---
+
+*Damit diese Datei automatisch geladen wird, folgenden Satz in die globale CoWork-Einstellung (Custom Instructions) eintragen:*
+
+**"Wenn eine Datei namens KONTEXT.md im Root des Arbeitsverzeichnisses liegt, lies sie zuerst."**

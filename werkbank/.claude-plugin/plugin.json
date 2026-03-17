@@ -1,0 +1,8 @@
+{
+  "name": "werkbank",
+  "version": "0.1.0",
+  "description": "Strukturierte Arbeitsumgebung mit Rollen, Regeln und Vorlagen. Setup-Skill zum Einrichten, zwei Referenz-Rollen (Manager, Tech-Lead), und ein Regelsystem das sich selbst pflegt.",
+  "author": {
+    "name": "Jakob Holderbaum"
+  }
+}
