@@ -1,0 +1,24 @@
+{
+  "name": "holderbaum-studios",
+  "owner": {
+    "name": "Jakob Holderbaum",
+    "email": "jakob@holderbaum.io"
+  },
+  "metadata": {
+    "description": "Eine strukturierte Arbeitsumgebung fuer Claude CoWork — mit Rollen, Regeln und Vorlagen.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "werkbank",
+      "source": "./werkbank",
+      "description": "Strukturierte Arbeitsumgebung mit Rollen, Regeln und Vorlagen. Setup-Skill zum Einrichten, Update-Skill zum Aktualisieren, zwei Referenz-Rollen (Manager, Tech-Lead).",
+      "version": "0.1.0",
+      "author": {
+        "name": "Jakob Holderbaum"
+      },
+      "keywords": ["workflow", "roles", "rules", "templates", "german"],
+      "category": "productivity"
+    }
+  ]
+}

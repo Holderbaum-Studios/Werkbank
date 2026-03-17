@@ -17,7 +17,7 @@ Alles wird ueber eine zentrale `KONTEXT.md` gesteuert, die Claude beim Start lie
 In Claude CoWork unter Settings → Plugins diesen Marketplace hinzufuegen:
 
 ```
-https://github.com/holderbaum-io/werkbank
+Holderbaum-Studios/Werkbank
 ```
 
 ## Quick Start
@@ -74,6 +74,8 @@ Der Update-Skill prueft, ob neue Versionen von Regeln oder Vorlagen verfuegbar s
 ## Repo-Struktur
 
 ```
+.claude-plugin/
+└── marketplace.json                Marketplace-Manifest
 werkbank/                           Das Plugin
 ├── .claude-plugin/plugin.json      Plugin-Manifest
 ├── skills/
@@ -88,7 +90,6 @@ werkbank/                           Das Plugin
 └── rollen/                         Referenz-Rollen
     ├── Manager/SYSTEM.md
     └── TechLead/SYSTEM.md
-marketplace.json                    Marketplace-Manifest
 LICENSE
 README.md
 ```
